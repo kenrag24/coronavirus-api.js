@@ -2,7 +2,7 @@
 ## This is an implementation with a discord bot
 
 ```js
-const covid = require("coronavirus-api")
+const covid = require("coronavirus-api.js")
 const Discord = require("discord.js")
 const client = new Discord.Client()
 
