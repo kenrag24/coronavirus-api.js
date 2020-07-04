@@ -1,0 +1,22 @@
+{
+  "name": "coronavirus-api",
+  "version": "1.0.0",
+  "description": "an api wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenrag24/coronavirus-api.git"
+  },
+  "author": "kenrag",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenrag24/coronavirus-api/issues"
+  },
+  "homepage": "https://github.com/kenrag24/coronavirus-api#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
