@@ -1,23 +1,15 @@
 # Welcome to the coronavirus API
-## This is an implementation with a discord bot
+## This is an overview of all the functions
 [![npm version](https://badge.fury.io/js/coronavirus-api.js.svg)](https://badge.fury.io/js/coronavirus-api.js)
 
 ```js
-const covid = require("coronavirus-api.js")
-const Discord = require("discord.js")
-const client = new Discord.Client()
+const c = require("coronavirus-api.js")
+c.covidall().then(console.log())
+//logs all covid-19 data
 
-client.on('message', async message => {
-    if(message.content === "!covid") {
-        let data = covid.covidall()
+c.covidcountry('USA').then(console.log())
+//shows data for a specified country
 
-        message.channel.send(data)
-        //not sure why you want to send JSON data to the user but this is just an example
-    }
-})
-
-
-
-
-client.login("always keep ur token secure")
+c.usastate('Texas').then(console.log()) 
+//shows data for a specified US state
 ```

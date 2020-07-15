@@ -13,5 +13,13 @@ module.exports = {
         const data = await res.json()
         if(!data) throw new Error("No data was returned");
         return data
+    },
+
+    usastate: async function usastate(state)    {
+        if(!state) throw new Error('no state was provided')
+        const res = await fetch(`https://disease.sh/v3/covid-19/states/${state}`)
+        const data = await res.json()
+        if(!data) throw new Error("No data was returned");
+        return data
     }
 }
