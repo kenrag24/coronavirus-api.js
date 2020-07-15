@@ -1,5 +1,6 @@
 # Welcome to the coronavirus API
 ## This is an implementation with a discord bot
+[![npm version](https://badge.fury.io/js/coronavirus-api.js.svg)](https://badge.fury.io/js/coronavirus-api.js)
 
 ```js
 const covid = require("coronavirus-api.js")
