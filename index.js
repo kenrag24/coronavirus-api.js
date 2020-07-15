@@ -9,7 +9,7 @@ module.exports = {
         },
 
     covidcountry: async function covidcountry(country)    {
-        const res = await fetch(`https://disease.sh/v3/covid-19/${country}`)
+        const res = await fetch(`https://disease.sh/v3/covid-19/countries/${country}`)
         const data = await res.json()
         if(!data) throw new Error("No data was returned");
         return data
