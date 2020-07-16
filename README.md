@@ -12,4 +12,8 @@ c.covidcountry('USA').then(console.log())
 
 c.usastate('Texas').then(console.log()) 
 //shows data for a specified US state
+
+c.allcontinents().then(console.log()) 
+
+c.continents('Europe').then(console.log()) 
 ```
